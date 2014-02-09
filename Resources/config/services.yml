@@ -1,0 +1,19 @@
+parameters:
+   danielcsgomes_mailchimp_api_connector.api.class: MailchimpApiConnector\MailchimpApi
+   danielcsgomes_mailchimp_api_connector.export.class: MailchimpApiConnector\MailchimpExportApi
+
+services:
+   danielcsgomes_mailchimp_api_connector.adapter:
+        class: %danielcsgomes_mailchimp_api_connector.adapter.class%
+
+   danielcsgomes_mailchimp_api_connector.api:
+        class: %danielcsgomes_mailchimp_api_connector.api.class%
+        arguments:
+            - @danielcsgomes_mailchimp_api_connector.adapter
+            - %danielcsgomes_mailchimp_api_connector.apikey%
+
+   danielcsgomes_mailchimp_api_connector.export:
+        class: %danielcsgomes_mailchimp_api_connector.export.class%
+        arguments:
+            - @danielcsgomes_mailchimp_api_connector.adapter
+            - %danielcsgomes_mailchimp_api_connector.apikey%

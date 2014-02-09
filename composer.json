@@ -1,0 +1,23 @@
+{
+    "name": "danielcsgomes/mailchimp-api-connector-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony2 bundle to integrate Mailchimp Api Connector",
+    "keywords": ["mailchimp"],
+    "homepage": "https://github.com/danielcsgomes/MailchimpApiConnectorBundle",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.3",
+        "danielcsgomes/mailchimp-api-connector": "~2.*"
+    },
+    "authors": [
+        {
+            "name": "Daniel Gomes",
+            "email": "me@danielcsgomes.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-0": { "Danielcsgomes\\Bundle\\MailchimpApiConnectorBundle": "" }
+    },
+    "target-dir": "Danielcsgomes/Bundle/MailchimpApiConnectorBundle"
+}
