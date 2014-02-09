@@ -19,5 +19,10 @@
     "autoload": {
         "psr-0": { "Danielcsgomes\\Bundle\\MailchimpApiConnectorBundle": "" }
     },
-    "target-dir": "Danielcsgomes/Bundle/MailchimpApiConnectorBundle"
+    "target-dir": "Danielcsgomes/Bundle/MailchimpApiConnectorBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
 }

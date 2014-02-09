@@ -36,7 +36,6 @@ class DanielcsgomesMailchimpApiConnectorExtension extends Extension
 
         $container->setParameter('danielcsgomes_mailchimp_api_connector.adapter.class', $config['adapter']['class']);
         $container->setParameter('danielcsgomes_mailchimp_api_connector.apikey', $config['api_key']);
-        $container->setParameter('danielcsgomes_mailchimp_api_connector.listid', $config['list_id']);
 
         $adapter = $container->findDefinition('danielcsgomes_mailchimp_api_connector.adapter');
         foreach ($config['adapter']['arguments'] as $argument) {

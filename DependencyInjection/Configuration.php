@@ -49,7 +49,6 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->scalarNode('api_key')->isRequired()->end()
-                ->scalarNode('list_id')->isRequired()->end()
                 ->arrayNode('adapter')
                     ->children()
                         ->scalarNode('class')->isRequired()->end()
