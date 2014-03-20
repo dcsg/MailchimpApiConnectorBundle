@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Danielcsgomes\Bundle\MailchimpApiConnectorBundle\DependencyInjection;
+namespace DCSG\Bundle\MailchimpApiConnectorBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -21,7 +21,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class DanielcsgomesMailchimpApiConnectorExtension extends Extension
+class DCSGMailchimpApiConnectorExtension extends Extension
 {
     /**
      * {@inheritDoc}
@@ -34,10 +34,10 @@ class DanielcsgomesMailchimpApiConnectorExtension extends Extension
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
 
-        $container->setParameter('danielcsgomes_mailchimp_api_connector.adapter.class', $config['adapter']['class']);
-        $container->setParameter('danielcsgomes_mailchimp_api_connector.apikey', $config['api_key']);
+        $container->setParameter('dcsg_mailchimp_api_connector.adapter.class', $config['adapter']['class']);
+        $container->setParameter('dcsg_mailchimp_api_connector.apikey', $config['api_key']);
 
-        $adapter = $container->findDefinition('danielcsgomes_mailchimp_api_connector.adapter');
+        $adapter = $container->findDefinition('dcsg_mailchimp_api_connector.adapter');
         foreach ($config['adapter']['arguments'] as $argument) {
             $adapter->addArgument($argument);
         }

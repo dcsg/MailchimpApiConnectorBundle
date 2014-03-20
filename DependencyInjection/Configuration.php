@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Danielcsgomes\Bundle\MailchimpApiConnectorBundle\DependencyInjection;
+namespace DCSG\Bundle\MailchimpApiConnectorBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -44,7 +44,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('danielcsgomes_mailchimp_api_connector');
+        $rootNode = $treeBuilder->root('dcsg_mailchimp_api_connector');
 
         $rootNode
             ->children()
