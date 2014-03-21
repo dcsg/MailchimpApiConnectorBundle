@@ -11,3 +11,7 @@ The recommended way to install is through [composer](http://composer.org).
 ```sh
 $ php composer.phar require "dcsg/mailchimp-api-connector-bundle:~1.0"
 ```
+
+## License
+
+Mailchimp API Connector Bundle is released under the MIT License. See the bundled [LICENSE](https://github.com/dcsg/MailchimpApiConnectorBundle/blob/master/Resources/meta/LICENSE) file for details.
