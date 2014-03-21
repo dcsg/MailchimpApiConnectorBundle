@@ -12,7 +12,8 @@
     "authors": [
         {
             "name": "Daniel Gomes",
-            "email": "me@dcsg.com"
+            "email": "me@danielcsgomes.com",
+            "homepage": "http://danielcsgomes.com/"
         }
     ],
     "autoload": {
